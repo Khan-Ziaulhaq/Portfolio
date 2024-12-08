@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 115px;
+}
+
+body {
+  background-color: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background-color: #342626;
+  position: sticky;
+  top: 0px;
+}
+
+.logo {
+  margin-left: 150px;
+  font-family: "Lilita One", sans-serif;
+  font-size: 35px;
+  color: #f8f8f8;
+  cursor: pointer;
+}
+
+.logo:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links li a {
+  padding: 10px 30px;
+  border: 1px solid #f8f8f8;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #f8f8f8;
+  color: #252525;
+}
+
+li,
+.nav-links a {
+  font-size: 20px;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+header button {
+  padding: 11px 30px;
+  border-radius: 30px;
+  background-color: #f8f8f8;
+  color: #252525;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-right: 150px;
+  font-weight: bold;
+}
+
+header button:hover {
+  background-color: rgb(194, 194, 194);
+}
+
+.line {
+  height: 6px;
+  width: auto;
+  background-color: #f8f8f8;
+  position: sticky;
+  top: 87px;
+}
+
+section1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.hero-container {
+  width: 1700px;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-container {
+  width: 600px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container .circle {
+  background-color: #342626;
+  border-radius: 150px;
+}
+.image-container img {
+  height: 600px;
+  border-radius: 150px;
+}
+
+.description-container {
+  margin-right: 150px;
+  width: 900px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.description-container h2 {
+  font-size: 50px;
+}
+
+.description-container h3 {
+  font-size: 30px;
+  color: #342626;
+}
+
+.description-container p {
+  font-size: 25px;
+  text-align: center;
+  color: #252525;
+}
+
+.description-container button {
+  background-color: #342626;
+  padding: 15px 80px;
+  border-radius: 20px;
+  color: #f8f8f8;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+  border: none;
+}
+
+.description-container button:hover {
+  background-color: #5a4646;
+}
+
+section2,
+section3,
+section4 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.skill-container {
+  width: 1500px;
+  height: 800px;
+  background-color: #342626;
+  border-radius: 20px;
+}
+
+.skill-container h1 {
+  font-size: 35px;
+  color: #f8f8f8;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-box {
+  height: 150px;
+  width: 275px;
+  border-radius: 10px;
+  border: 3px solid #f8f8f8;
+  margin: 30px 15px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.skill-box img {
+  height: 100px;
+  width: 100px;
+  border-radius: 0px;
+}
+
+.skill-box:hover {
+  background-color: #f8f8f8;
+  transition: all 0.5s ease;
+  transform: scale(1.4);
+}
+
+.project-container {
+  width: 1500px;
+  height: 800px;
+  border-radius: 20px;
+}
+
+.project-container h1 {
+  font-size: 35px;
+  color: #342626;
+  text-align: center;
+  margin: 40px 0px;
+}
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.project-box {
+  height: 640px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #342626;
+  margin: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-box img {
+  height: 200px;
+  border-radius: 150px;
+}
+
+.project-box h2 {
+  color: #f8f8f8;
+  font-size: 30px;
+}
+
+.project-box p {
+  margin: 0px 20px;
+  text-align: justify;
+  color: #f8f8f8;
+  font-size: 20px;
+}
+.project-box button {
+  margin: 0px 150px;
+  padding: 11px 30px;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+  margin-right: 150px;
+  font-weight: bold;
+}
+.project-box button:hover {
+  background-color: rgb(194, 194, 194);
+
+  transition: all 0.5s ease;
+}
+
+
+.form-container {
+  width: 1500px;
+  height: 800px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #342626;
+  color: #f8f8f8;
+  padding: 30px;
+}
+
+.form-container h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form {
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form label {
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
+.form input {
+    width: 1000px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid;
+  background-color: #342626;
+  color: #f8f8f8;
+  font-size: 15px;
+}
+
+.form button {
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid;
+  margin-top: 15px;
+}
+
+.form button:hover {
+  background-color: rgb(194, 194, 194);
+  transition: all 0.5s ease;
+}
+
+.form textarea {
+  padding: 8px;
+  height: 150px;
+  border-radius: 8px;
+  background-color: #342626;
+  color: #f8f8f8;
+  font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    background-color: #342626;
+    color: white;
+    gap: 20px;
+  }
+
+  footer img {
+    height: 30px;
+    width: 30px;
+    background-color: #f8f8f8;
+    border-radius: 6px;
+}
+
+footer a, p{
+        font-size: 15px;
+        color: #f8f8f8;
+        text-decoration: none;
+      }
