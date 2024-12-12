@@ -4,11 +4,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
   scroll-behavior: smooth;
-  scroll-padding: 115px;
+  scroll-padding: 110px;
+  font-size: 100%;
 }
 
 body {
@@ -23,48 +25,31 @@ header {
   padding: 20px 6%;
   background-color: #342626;
   position: sticky;
-  top: 0px;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo {
-  margin-left: 150px;
   font-family: "Lilita One", sans-serif;
   font-size: 35px;
   color: #f8f8f8;
   cursor: pointer;
 }
 
-.logo:hover {
-  transition: transform 0.3s ease;
-  transform: scale(1.1);
-}
-
 .nav-links {
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
   gap: 20px;
+  transition: transform 0.3s ease;
 }
 
 .nav-links li a {
   padding: 10px 30px;
   border: 1px solid #f8f8f8;
   border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.nav-links li a:hover {
-  background-color: #f8f8f8;
-  color: #252525;
-}
-
-li,
-.nav-links a {
-  font-size: 20px;
-  color: #f8f8f8;
   text-decoration: none;
+  color: #f8f8f8;
+  font-size: 20px;
 }
 
 header button {
@@ -75,9 +60,8 @@ header button {
   font-size: 20px;
   cursor: pointer;
   border: none;
-  transition: background-color 0.3s ease;
-  margin-right: 150px;
   font-weight: bold;
+  margin-right: 150px;
 }
 
 header button:hover {
@@ -86,27 +70,33 @@ header button:hover {
 
 .line {
   height: 6px;
-  width: auto;
+  width: 100%;
   background-color: #f8f8f8;
   position: sticky;
-  top: 87px;
+  top: 86px;
+  z-index: 900;
 }
 
 #about {
   display: flex;
   justify-content: center;
   margin-top: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
 }
+
 .hero-container {
-  width: 1700px;
-  height: 800px;
+  width: 100%;
+  max-width: 1700px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .image-container {
-  width: 600px;
-  height: 800px;
+  width: 100%;
+  max-width: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,15 +106,16 @@ header button:hover {
   background-color: #342626;
   border-radius: 150px;
 }
+
 .image-container img {
-  height: 600px;
+  height: 100%;
+  max-height: 600px;
   border-radius: 150px;
 }
 
 .description-container {
-  margin-right: 150px;
-  width: 900px;
-  height: 800px;
+  width: 100%;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,17 +125,20 @@ header button:hover {
 
 .description-container h2 {
   font-size: 50px;
+  text-align: center;
 }
 
 .description-container h3 {
   font-size: 30px;
   color: #342626;
+  text-align: center;
 }
 
 .description-container p {
   font-size: 25px;
   text-align: center;
   color: #252525;
+  padding: 0 20px;
 }
 
 .description-container button {
@@ -154,7 +148,6 @@ header button:hover {
   color: #f8f8f8;
   font-size: 20px;
   cursor: pointer;
-  margin-top: 30px;
   border: none;
 }
 
@@ -162,29 +155,33 @@ header button:hover {
   background-color: #5a4646;
 }
 
-#skill, #project, #contact {
+#skill,
+#project,
+#contact {
   display: flex;
   justify-content: center;
   margin-bottom: 100px;
+  padding: 20px;
 }
+
 .skill-container {
-  width: 1500px;
-  height: 800px;
+  width: 100%;
+  max-width: 1500px;
   background-color: #342626;
   border-radius: 20px;
+  padding: 20px;
 }
 
 .skill-container h1 {
   font-size: 35px;
   color: #f8f8f8;
   text-align: center;
-  margin: 40px 0px;
+  margin: 40px 0;
 }
 
 .skills {
   display: flex;
   justify-content: space-evenly;
-  align-content: center;
   flex-wrap: wrap;
 }
 
@@ -195,43 +192,46 @@ header button:hover {
   border: 3px solid #f8f8f8;
   margin: 30px 15px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
+
 .skill-box img {
   height: 100px;
   width: 100px;
-  border-radius: 0px;
 }
 
 .skill-box:hover {
   background-color: #f8f8f8;
   transition: all 0.5s ease;
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 .project-container {
-  width: 1500px;
-  height: 800px;
+  width: 100%;
+  max-width: 1600px;
   border-radius: 20px;
+  padding: 20px;
 }
 
 .project-container h1 {
   font-size: 35px;
   color: #342626;
   text-align: center;
-  margin: 40px 0px;
+  margin: 40px 0;
 }
+
 .projects {
   display: flex;
-  justify-content: space-between;
-  align-content: center;
+  flex-wrap: wrap;
 }
 
 .project-box {
-  height: 640px;
-  width: 350px;
+  height: auto;
+  width: 100%;
+  max-width: 350px;
   border-radius: 10px;
   background-color: #342626;
   margin: 30px 15px;
@@ -240,8 +240,9 @@ header button:hover {
   justify-content: space-evenly;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .project-box:hover {
   box-shadow: 0px 0px 50px;
@@ -256,16 +257,17 @@ header button:hover {
 .project-box h2 {
   color: #f8f8f8;
   font-size: 30px;
+  text-align: center;
 }
 
 .project-box p {
-  margin: 0px 20px;
+  margin: 0 20px;
   text-align: justify;
   color: #f8f8f8;
   font-size: 20px;
 }
+
 .project-box button {
-  margin: 0px 150px;
   padding: 11px 30px;
   border-radius: 30px;
   background-color: #fff;
@@ -274,19 +276,17 @@ header button:hover {
   cursor: pointer;
   border: none;
   transition: background-color 0.3s ease;
-  margin-right: 150px;
   font-weight: bold;
 }
+
 .project-box button:hover {
   background-color: rgb(194, 194, 194);
-
   transition: all 0.5s ease;
 }
 
-
 .form-container {
-  width: 1500px;
-  height: 800px;
+  width: 100%;
+  max-width: 1500px;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -299,45 +299,29 @@ header button:hover {
 
 .form-container h2 {
   font-size: 30px;
-  margin-bottom: 10px;
   text-align: center;
-  margin-top: 10px;
 }
 
 .form {
-  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 100%;
+  max-width: 1000px;
 }
 
 .form label {
   font-size: 20px;
-  margin: 0px 5px;
 }
 
 .form input {
-    width: 1000px;
+  width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid;
   background-color: #342626;
   color: #f8f8f8;
   font-size: 15px;
-}
-
-.form button {
-  padding: 8px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 20px;
-  border: 1px solid;
-  margin-top: 15px;
-}
-
-.form button:hover {
-  background-color: rgb(194, 194, 194);
-  transition: all 0.5s ease;
 }
 
 .form textarea {
@@ -347,27 +331,127 @@ header button:hover {
   background-color: #342626;
   color: #f8f8f8;
   font-size: 20px;
+  border: 1px solid #f8f8f8;
+  resize: vertical;
+}
+
+.form button {
+  padding: 8px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #f8f8f8;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #f8f8f8;
+  transition: all 0.3s ease;
+}
+
+.form button:hover {
+  background-color: rgb(194, 194, 194);
+  color: #252525;
+  border: 1px solid rgb(194, 194, 194);
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    background-color: #342626;
-    color: white;
-    gap: 20px;
-  }
-
-  footer img {
-    height: 30px;
-    width: 30px;
-    background-color: #f8f8f8;
-    border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  background-color: #342626;
+  color: white;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-footer a, p{
-        font-size: 15px;
-        color: #f8f8f8;
-        text-decoration: none;
-      }
+footer img {
+  height: 30px;
+  width: 30px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+}
+
+footer a,
+p {
+  font-size: 15px;
+  color: #f8f8f8;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 28px;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+
+  header button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #about,
+  #skill,
+  #project,
+  #contact {
+    padding: 15px;
+  }
+
+  .description-container h2 {
+    font-size: 32px;
+  }
+
+  .description-container h3 {
+    font-size: 24px;
+  }
+
+  .description-container p {
+    font-size: 18px;
+  }
+
+  .description-container button {
+    padding: 10px 50px;
+    font-size: 16px;
+  }
+
+  .skill-box {
+    width: 100%;
+    max-width: 200px;
+    height: 120px;
+  }
+
+  .project-box {
+    max-width: 300px;
+  }
+
+  .project-box h2 {
+    font-size: 20px;
+  }
+
+  .project-box p {
+    font-size: 14px;
+  }
+
+  .project-box button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+}
